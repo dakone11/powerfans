@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: #050505;
+  background-color: #000000;
   font-family: 'Oxygen', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
@@ -598,7 +598,7 @@ button, .submit:hover{
   background-position: center center;
   background-size: cover;
   position: relative;
-  background-image: url(/img/desde-casa.jpg);
+  background-image: url(../img/desde-casa.jpg);
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
@@ -847,6 +847,9 @@ footer{
   width: 100vw;
   padding: 20px;
   text-align: center;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
 }
 .footer-bottom p{
   text-align: center;
@@ -863,6 +866,11 @@ footer{
   text-transform: uppercase;
   opacity: .4;
   font-weight: 200;
+}
+.logo{
+  width: 40px;
+  margin-right: 12px;
+ 
 }
 /********************************* footer end ******************************/
 /************************** MEDIA QUERY max 700 ***************************************************************/
