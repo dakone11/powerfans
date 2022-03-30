@@ -976,6 +976,77 @@ footer{
  
 }
 /********************************* footer end ******************************/
+/********************************** cookies ***************************************/
+.cookie-bar {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  right: 0;
+  left: 0;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #494949;
+  color: white;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  transition: 0.8s;
+  animation: slideIn 0.8s;
+  animation-delay: 0.8s;
+}
+.cookie-bar .message {
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .cookie-bar .message {
+    display: none;
+ }
+}
+.cookie-bar .mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .cookie-bar .mobile {
+    display: inline-block;
+ }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+ }
+  100% {
+    transform: translateY(0);
+ }
+}
+.close-cb {
+  border: none;
+  color: white;
+  background-color: #ff4f2a;
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, .2);
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.close-cb:hover {
+  background-color: #eeeae3;
+}
+.checkbox-cb {
+  display: none;
+}
+.checkbox-cb:checked + .cookie-bar {
+  transform: translateY(-250px);
+}
+
+
 /************************** MEDIA QUERY max 700 ***************************************************************/
 @media (max-width: 700px) {
   .showcase-content {
