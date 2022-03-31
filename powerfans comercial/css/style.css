@@ -361,7 +361,7 @@ a {
   font-family: 'Oxygen', sans-serif;
   text-transform:inherit;
   font-weight:normal;
-  margin: 1rem;
+  padding: 8px;
 }
 /*************************************** end video header ***************************************************************/
 
@@ -525,6 +525,9 @@ a {
   flex: 30.33%;
   color:#eeeae3;
   margin: 12px;
+}
+.colum img{
+  padding: 130px;
 }
 .midle{
   padding: 28px;
@@ -886,13 +889,17 @@ button, .submit:hover{
 /********************************* app download end ******************************/
 
 
-/********************************* titulos y parrafos ******************************/
+/********************************* textos ******************************/
 em{
   color:silver;
 }
 a{
   color:#ff8700;
   font-size:medium;
+}
+a :hover{
+  color:#ff4f2a;
+
 }
 .big-tittle{
   font-size: 50px;
@@ -904,10 +911,7 @@ a{
 }
 .medium-tittle{
   color: #ff8700;
-  font-size:21px;
-  text-align: center;
-  /*text-transform: uppercase;*/
-  font-weight:normal;
+  font-size:20px;
   margin: 1rem;
 }
 .texto-lectura{
@@ -921,7 +925,7 @@ h2{
   color:#494949;
   font-size:larger;
 }
-/************************************* titulos y parrafos ******************************/
+/************************************* textos ******************************/
 /******************************************* footer ************************************/
 footer{
   bottom: 0;
@@ -1003,11 +1007,7 @@ footer{
   word-spacing: 2px;
   text-transform: capitalize;
 }
-.footer-bottom p a{
-  color:#ff4f2a;
-  font-size: 16px;
-  text-decoration: none;
-}
+
 .footer-bottom span{
   text-transform: uppercase;
   opacity: .4;
