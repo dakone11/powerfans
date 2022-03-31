@@ -1200,7 +1200,7 @@ footer{
       top:60%;
       transform: translate(-50%,-50%);
       border-radius: 50px;
-      outline: 2px inset#ff4f2a;
+      outline: 2px inset #ff4f2a;
       outline-offset: 2px;
  }
   .phone img {
@@ -1273,7 +1273,7 @@ footer{
       top:60%;
       transform: translate(-50%,-50%);
       border-radius: 50px;
-      outline: 2px inset#ff4f2a;
+      outline: 2px inset #ff4f2a;
       outline-offset: 2px;
  }
   .phone img {
