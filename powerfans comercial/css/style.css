@@ -17,16 +17,19 @@ img {
 a {
   text-decoration: none;
 }
+.button, input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 /********************************************** sections main *****************************************************************/
 main{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   overflow: hidden;
 }
 section{
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -37,8 +40,6 @@ section{
   color: #eeeae3;
   display: flex;
   justify-content: space-between;
-  
-  
 }
 .showcase-content {
   display: flex;
@@ -95,6 +96,8 @@ section{
   filter: drop-shadow(-19px -12px 100px #3a3a3a);
   padding: 28px;
 }
+
+
 /********************************* textos ******************************/
 em{
   color:silver;
@@ -131,6 +134,24 @@ h2{
   font-family: 'Oxygen', sans-serif;
   color:#494949;
   font-size:larger;
+}
+/********************************* app download ******************************/
+.download-app {
+  display:flex;
+  justify-content: space-around;
+  margin:0em;
+  padding-left: 0em;
+  align-items: center;
+
+}
+.download-app img {
+  margin-left: 22px;
+  margin-top: 25px;
+  max-width: 200px;
+  cursor: pointer;
+}
+.download-app img:hover {
+  filter: invert(100%);
 }
 
 /******************************************************** NAV *************************/
@@ -654,50 +675,9 @@ section{
   filter: drop-shadow(-19px -12px 100px #3a3a3a);
   padding: 28px;
 }
-/********************************* textos ******************************/
-em{
-  color:silver;
-}
-a{
-  color:#ff8700;
-  font-size:medium;
-}
-a :hover{
-  color:#ff4f2a;
-
-}
-.big-tittle{
-  font-size: 50px;
-  line-height: 1.2;
-  color:#ff4f2a;
-  margin:12px;
-  padding:16px;
-  font-family: 'Oxygen', sans-serif;
-}
-.medium-tittle{
-  color: #ff8700;
-  font-size:20px;
-  margin: 1rem;
-}
-.texto-lectura{
-  padding: 16px;
-  font-family:'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  text-align: justify;
-  color: #eeeae3;
-}
-h2{
-  font-family: 'Oxygen', sans-serif;
-  color:#494949;
-  font-size:larger;
-}
 
 /****************************** modal login *****************************************/
-.button, input{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+
 .container_modal{
   width: 100%;
   height: 100%;
@@ -723,7 +703,7 @@ h2{
   background-color: rgba(0,0,0,0);
 }
 .overlay.overlay-modal-showing{
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.664);
 }
 /* BUTTON */
 .button, .submit{
@@ -800,7 +780,7 @@ button, .submit:hover{
 .close:hover{
   color: #ff4f2a;
 }
-/************************************************** end modal **********************************************************/
+
 
 /************************************************ start img animado js *********************************************************/
 .image {
@@ -834,7 +814,7 @@ button, .submit:hover{
   position: relative;
   left: -200px;
 }
-/************************************************ img animado js end ************************************************************/
+
 /***************************************************** acordeon ****************************************************************/
 .container-acordion{
   max-width: 1200px;
@@ -890,7 +870,7 @@ button, .submit:hover{
 .accordion-item:target .accordion-link .ion-md-arrow-down{
   display: block;
 }
-/**************************************************** acord end **********************************************************************/
+
 
 /************************************************* newslatter *********************************************************************/
 .newslatter {
@@ -929,7 +909,7 @@ button, .submit:hover{
   background-color: #ff4f2a;
   border-color: #000;
 }
-/*********************************************** newslatter end  ***********************************************/
+
 /************************************************ counter ***********************************************************/
 #offer-section {
   background-position: center center;
@@ -1020,62 +1000,9 @@ button, .submit:hover{
   text-transform: uppercase;
   margin-top: 0;
 }
-/********************************* counter end ******************************/
-/********************************* app download ******************************/
-.download-app {
-  display:flex;
-  justify-content: space-around;
-  margin:0em;
-  padding-left: 0em;
-  align-items: center;
 
-}
-.download-app img {
-  margin-left: 22px;
-  margin-top: 25px;
-  width: 180px;
-  cursor: pointer;
-}
-.download-app img:hover {
-  filter: invert(100%);
-}
-/********************************* textos ******************************/
-em{
-  color:silver;
-}
-a{
-  color:#ff8700;
-  font-size:medium;
-}
-a :hover{
-  color:#ff4f2a;
 
-}
-.big-tittle{
-  font-size: 50px;
-  line-height: 1.2;
-  color:#ff4f2a;
-  margin:12px;
-  padding:16px;
-  font-family: 'Oxygen', sans-serif;
-}
-.medium-tittle{
-  color: #ff8700;
-  font-size:20px;
-  margin: 1rem;
-}
-.texto-lectura{
-  padding: 16px;
-  font-family:'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  text-align: justify;
-  color: #eeeae3;
-}
-h2{
-  font-family: 'Oxygen', sans-serif;
-  color:#494949;
-  font-size:larger;
-}
+
 /************************************* testimonials *****************************/
 .contenedor-testimonial{
   max-width: 1200px;
