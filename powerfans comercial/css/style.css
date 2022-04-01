@@ -1010,7 +1010,8 @@ button, .submit:hover{
   height: 400px;
   overflow: hidden;
   margin: 0 auto;
-  margin-top: 60px; animation: gradientAnimation 10s ease infinite;
+  margin-top: 60px;
+  animation: gradientAnimation 10s ease infinite;
   animation: movimiento 30s infinite linear alternate;
 }
 @keyframes movimiento{
