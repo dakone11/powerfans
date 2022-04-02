@@ -35,6 +35,7 @@ section{
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+ 
 }
 .showcase {
   color: #eeeae3;
@@ -117,11 +118,13 @@ a :hover{
   margin:12px;
   padding:16px;
   font-family: 'Oxygen', sans-serif;
+  border-bottom:#272727 1px solid;
 }
 .medium-tittle{
   color: #ff8700;
   font-size:20px;
   margin: 1rem;
+  border-bottom:#272727 1px solid;
 }
 .texto-lectura{
   padding: 16px;
@@ -347,30 +350,7 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.boton-cerrar{
-  position: absolute;
-  right: -100px;
-  top: -300px;
-  cursor: pointer;
-  z-index: 2;
-  display: none;
-}
-.boton-cerrar span{
-  display: block;
-  width: 40px;
-  height: 3px;
-  background-color:#ff4f2a;
-  margin-top: 7px;
-}
-.boton-cerrar span :first-child{
-  margin-top: 0px;
-}
-.linea1{
-  transform: translateY(10px) rotate(45deg);
-}
-.linea2{
-  transform: translateY(0px) rotate(-45deg);
-}
+
 .download-video {
   color: #eeeae3;
   z-index: 3;
@@ -492,20 +472,16 @@ h2{
 
 /*************************************** slider ***************************************************************/
 #small-slider{
-  font-family: sans-serif;
   margin: auto;
   max-width: 800px;
   width: 100%;
   padding: 30px;
-  box-sizing: border-box;
- 
 }
 
 #small-slider > ul, li {
     padding: 0;
     margin: 0;
     list-style: none;
-   
 }
 
 #small-slider > ul.slider{
@@ -513,7 +489,6 @@ h2{
   max-width: 800px;
   width: 100%;
   height: 400px;
-  
 }
 
 #small-slider > ul.slider h3{
@@ -527,8 +502,8 @@ h2{
   width: 200px;
   margin: 20px;
   border-radius: 5px;
-  outline: 2px inset #ff4f2a;
-  outline-offset: 2px;
+  outline: 1px inset #ff4f2a;
+  outline-offset: 12px;
 }
 
 
@@ -540,15 +515,12 @@ h2{
     width: inherit;
     height: inherit;
     transition: opacity .5s;
-   
 }
 
 #small-slider > ul.slider li img{
   width: 100%;
   border-radius: 50px;
- 
   object-fit: cover;
-  
 }
 
 #small-slider > ul.slider li:first-child {
@@ -568,18 +540,20 @@ h2{
 #small-slider > .selector li{
   display: inline-block;
   text-align: center;
+  margin-right: 8px;
 }
 
 #small-slider > .selector li a{
   display: inline-block;
   text-decoration: none;
-  color: #eeeae3;
   background-color:#ff4f2a;
-  padding: 10px;
   width: 20px;
   height: 20px;
   font-size: 20px;
   border-radius: 100%;
+}
+#small-slider > .selector li a:hover{ 
+background-color:#4e4e4e;
 }
 
 
@@ -599,79 +573,6 @@ h2{
   height:100%;
 }
 
-/********************************************** sections main *****************************************************************/
-main{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  overflow: hidden;
-}
-section{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-}
-.showcase {
-  color: #eeeae3;
-  display: flex;
-  justify-content: space-between;
-  
-  
-}
-.showcase-content {
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-  padding: 12px;
-}
-.showcase-content img {
-  width: 38%;
-  margin: 8px;
-  padding: 8px;
-  position:relative;
-}
-
-.showcase-content text {
-  margin: 8px;
-  padding: 8px;
-}
-.container-video{
-  display:flex ;
-  flex-wrap: wrap;
-}
-.container {
-  max-width: 1200px;
-  padding: 0 30px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-.columns {
-  max-width: 1200px;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.column {
-  flex: 30.33%;
-  color:#eeeae3;
-  margin: 12px;
-}
-.column img{
-  padding: 30px;
-}
-        
-.midle:hover{
-  filter: drop-shadow(-19px -12px 100px #3a3a3a);
-  padding: 28px;
-}
 
 /****************************** modal login *****************************************/
 
@@ -918,7 +819,9 @@ button, .submit:hover{
   margin: 0 auto;
   height:500px;
   font-family: 'Oxygen', sans-serif;
-  
+  border-bottom: 1px solid #ff8700;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 #offer-section::before {
   content: "";
@@ -1011,7 +914,8 @@ button, .submit:hover{
   background: linear-gradient(45deg, rgba(71, 71, 71, 0.199), rgba(51, 43, 40, 0.315), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 0 0 / 500% no-repeat, url("../img/bg-testimonial.jpg") 0 0 / cover no-repeat;
   animation: gradientAnimation 10s ease infinite;
   animation: movimiento 30s infinite linear alternate;
-  border-radius: 8px;
+  border-radius: 18px;
+  border-bottom: 2px solid #ff8700;
 }
  
 @keyframes movimiento{
