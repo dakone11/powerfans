@@ -690,10 +690,10 @@ button, .submit:hover{
 }
 .list > .product {
   width: 250px;
-  float: left;
   margin: 1%;
   position: relative;
   margin-top: 18px;
+  border-bottom: #ff8700 1px solid;
 }
 .product > div {
   text-align: center;
@@ -758,6 +758,57 @@ button, .submit:hover{
   font-weight: 800;
   font-size:28px;
 }
+/************************************************ payment *********************************************************/
+.row {
+  margin-top: 60px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 60 -16px;
+}
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 44px;
+  color: #eeeae3;
+  margin-right: 8px;
+}
+
 
 /************************************************ start img animado js *********************************************************/
 .image {
@@ -1452,6 +1503,13 @@ footer{
 }   
 #small-slider{
   width: 95%;
-}       
+} 
+/* payment*/  
+.row {
+  flex-direction: column-reverse;
+}
+.col-25 {
+  margin-bottom: 20px;
+}    
 
 }
